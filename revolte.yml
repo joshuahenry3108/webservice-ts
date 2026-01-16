@@ -1,7 +1,7 @@
 revolte:
   version: '1.0'
-  project: Nixsoft
-  appName: nixsoft-api
+  project: Samsung
+  appName: sams-api
   env:
     staging:
       branch: main
