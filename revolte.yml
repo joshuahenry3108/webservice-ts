@@ -58,6 +58,14 @@ revolte:
               replica:
                 min: 1
                 max: 2
+              utilization:
+                cpu:
+                  target: 70
+                memory:
+                  target: 70
+              behavior:
+                scaleDown:
+                  stabilizationWindow: 300
     preview:
       services:
         rid_1:
