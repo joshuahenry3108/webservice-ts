@@ -33,8 +33,6 @@ revolte:
             loadBalancerMode: dedicated
             variables:
               BASE_URL: /api/v1
-              VITE_API_URL: test
-              VITE_SECRET_KEY: '#{secretKey}'
           specifications:
             cpu: 2
             memory: 4
