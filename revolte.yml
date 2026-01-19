@@ -1,7 +1,7 @@
 revolte:
   version: '1.0'
-  project: Ikea project
-  appName: ikea-app
+  project: auto-deploy
+  appName: demo-api
   env:
     staging:
       branch: main
@@ -58,14 +58,6 @@ revolte:
               replica:
                 min: 1
                 max: 2
-              utilization:
-                cpu:
-                  target: 70
-                memory:
-                  target: 70
-              behavior:
-                scaleDown:
-                  stabilizationWindow: 300
     preview:
       services:
         rid_1:
