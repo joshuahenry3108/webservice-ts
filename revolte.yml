@@ -2,9 +2,23 @@ revolte:
   version: '1.0'
   project: Walmart
   appName: walmart-webservice
+  config:
+    codeReview:
+      summarize: true
+      suggestFixes: false
+      commentStyle: Concise
+    codeQuality:
+      codeStyle:
+        rules:
+          typescript/arrayType: warn
+    testSuite:
+      command: npm run test
   env:
     staging:
       branch: main
+      codeReview: true
+      codeQuality: true
+      testSuite: true
       services:
         rid_1:
           type: WEB_SERVICE
@@ -22,6 +36,9 @@ revolte:
             storage: 30
     qa:
       branch: main
+      codeReview: true
+      codeQuality: true
+      testSuite: true
       services:
         rid_1:
           type: WEB_SERVICE
@@ -39,6 +56,9 @@ revolte:
             storage: 30
     production:
       branch: main
+      codeReview: true
+      codeQuality: true
+      testSuite: true
       services:
         rid_1:
           type: WEB_SERVICE
@@ -58,15 +78,10 @@ revolte:
               replica:
                 min: 1
                 max: 2
-              utilization:
-                cpu:
-                  target: 70
-                memory:
-                  target: 70
-              behavior:
-                scaleDown:
-                  stabilizationWindow: 300
     preview:
+      codeReview: true
+      codeQuality: true
+      testSuite: true
       services:
         rid_1:
           type: WEB_SERVICE
