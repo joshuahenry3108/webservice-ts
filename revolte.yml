@@ -1,7 +1,7 @@
 revolte:
   version: '1.0'
-  project: auto-deploy
-  appName: demo-api
+  project: Walmart
+  appName: walmart-webservice
   env:
     staging:
       branch: main
