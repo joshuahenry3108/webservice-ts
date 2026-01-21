@@ -1,7 +1,7 @@
 revolte:
   version: '1.0'
-  project: Walmart
-  appName: walmart-webservice
+  project: Coco
+  appName: coco-app
   config:
     codeReview:
       summarize: true
