@@ -14,7 +14,8 @@
   "scripts": {
     "dev": "ts-node src/server.ts",
     "build": "tsc",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "echo \"from web-service no test specified\""
   },
   "author": "",
   "license": "ISC",
