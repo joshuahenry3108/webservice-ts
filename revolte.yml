@@ -1,7 +1,7 @@
 revolte:
   version: '1.0'
-  project: Coco
-  appName: coco-app
+  project: ProjectName
+  appName: AppName
   config:
     codeReview:
       summarize: true
