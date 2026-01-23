@@ -30,11 +30,6 @@ revolte:
             loadBalancerMode: dedicated
             variables:
               BASE_URL: /api/v1
-          insights:
-            disk:
-              - disk_used
-              - disk_total
-              - disk_free
           specifications:
             cpu: 2
             memory: 2
