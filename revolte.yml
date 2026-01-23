@@ -1,7 +1,7 @@
 revolte:
   version: '1.0'
-  project: Henry
-  appName: webservice-app
+  project: Yellow
+  appName: yellow-webservice
   config:
     codeReview:
       summarize: true
