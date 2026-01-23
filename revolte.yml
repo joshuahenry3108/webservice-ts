@@ -1,7 +1,7 @@
 revolte:
   version: '1.0'
-  project: Mallow Tech
-  appName: app-check
+  project: Bridgewoods
+  appName: bridgewood-app
   config:
     codeReview:
       summarize: true
