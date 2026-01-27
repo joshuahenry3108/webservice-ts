@@ -1,24 +1,10 @@
 revolte:
   version: '1.0'
-  project: Yellow
-  appName: yellow-webservice
-  config:
-    codeReview:
-      summarize: true
-      suggestFixes: false
-      commentStyle: Concise
-    codeQuality:
-      codeStyle:
-        rules:
-          typescript/arrayType: warn
-    testSuite:
-      command: npm run test
+  project: Marshmellow
+  appName: app-webservice
   env:
     staging:
       branch: main
-      codeReview: true
-      codeQuality: false
-      testSuite: true
       services:
         rid_1:
           type: WEB_SERVICE
@@ -36,9 +22,6 @@ revolte:
             storage: 30
     qa:
       branch: main
-      codeReview: true
-      codeQuality: false
-      testSuite: true
       services:
         rid_1:
           type: WEB_SERVICE
@@ -56,9 +39,6 @@ revolte:
             storage: 30
     production:
       branch: main
-      codeReview: true
-      codeQuality: false
-      testSuite: true
       services:
         rid_1:
           type: WEB_SERVICE
@@ -87,9 +67,6 @@ revolte:
                 scaleDown:
                   stabilizationWindow: 300
     preview:
-      codeReview: true
-      codeQuality: false
-      testSuite: true
       services:
         rid_1:
           type: WEB_SERVICE
