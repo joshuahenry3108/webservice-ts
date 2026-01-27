@@ -18,7 +18,7 @@ revolte:
               BASE_URL: /api/v1
           specifications:
             cpu: 2
-            memory: 2
+            memory: 8
             storage: 30
     qa:
       branch: main
